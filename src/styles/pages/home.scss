@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home{
+    padding-top: 64px;
+    padding-bottom: 52px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @media (max-width: 500px) {
+        padding-bottom: 48px;
+    }
+    &__profile-img{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        h4{
+            font-family: Inter;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 30px;
+            text-align: center;
+            margin: 24px 0 56px 0;
+            color: #101828;
+        }
+        &__share{
+            display: none;
+            @media (max-width: 500px) {
+                display: block;
+                position: absolute;
+                top: 44px;
+                right: 16px;
+            }
+        }
+    }
+    &__main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        a{
+            height: 76px;
+            width: 80%;
+            border-radius: 8px;
+            border: 1px solid #EAECF0;
+            text-decoration: none;
+            font-family: Inter;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 28px;
+            text-align: center; 
+            color: #101828;   
+            display: grid;
+            place-items: center;  
+            background-color: #EAECF0; 
+            @media (max-width: 500px) {
+                width: 90%;
+            }     
+        }
+    }
+    &__socials{
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        margin-top: 48px;
+    }
+    &__footer{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 168px;
+        flex-wrap: wrap;
+        gap: 20px;
+        p{
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+            color: #667085;
+        }
+        @media (max-width: 500px) {
+            display: none;
+        }
+    }
+}
