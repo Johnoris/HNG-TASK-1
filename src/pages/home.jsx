@@ -1,4 +1,6 @@
-import { GITHUB_LOGO, I4G_LOGO, PROFILE_IMG, SHARE_ICON, SLACK_LOGO, ZURI_LOGO } from "../assets/image";
+import { Link } from "react-router-dom";
+import { GITHUB_LOGO, PROFILE_IMG, SHARE_ICON, SLACK_LOGO } from "../assets/image";
+import Footer from "../components/footer";
 
 const Home = () => {
     return(
@@ -16,16 +18,13 @@ const Home = () => {
                 <a id="book__python" href="https://books.zuri.team/python-for-beginners?ref_id=johnorisanwo">Python Books</a>
                 <a id="pitch" href="https://background.zuri.team">Background Check for Coders</a>
                 <a id="book__design" href="https://books.zuri.team/design-rules">Design Books</a>
+                <Link to='/contact' id="contact">Contact Me</Link>
             </main>
             <div className="home__socials">
                 <img src={SLACK_LOGO} alt=""/>
                 <img src={GITHUB_LOGO} alt=""/>
             </div>
-            <footer className="home__footer">
-                <img src={ZURI_LOGO} alt=""/>
-                <p>HNG Internship 9 Frontend Task</p>
-                <img src={I4G_LOGO} alt=""/>
-            </footer>
+            <Footer/>
         </div>
     )
 }

@@ -1,7 +1,14 @@
 //pages
 @import './pages/home.scss';
+@import './pages/contact.scss';
 
 
+//components
+@import './components/footer.scss';
 
 //font-family
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+html{
+    font-family: Inter;
+}
