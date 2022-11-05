@@ -1,6 +1,8 @@
 import Footer from "../components/footer"
+import {useNavigate} from 'react-router-dom'
 
 const Contact = () => {
+    const router = useNavigate();
     return(
         <div className="contact">
             <div className="contact__main">
@@ -45,7 +47,7 @@ const Contact = () => {
                         />
                         <p>You agree to providing your data to John who may contact you.</p>
                     </div>
-                    <button id="btn_submit">Send message</button>
+                    <button id="btn_submit" onClick={(e) => { e.preventDefault(); router('/')}}>Send message</button>
                 </form>
             </div>
             <Footer/>
